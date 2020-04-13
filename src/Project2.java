@@ -1,3 +1,10 @@
+/*
+Filename: Project2.java
+Author: Yael Brown
+Date: 4/12/2020
+Brief Purpose of the Program: To calculate sales tax for different types of automobiles.
+*/
+
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 

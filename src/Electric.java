@@ -1,3 +1,10 @@
+/*
+Filename: Electric.java
+Author: Yael Brown
+Date: 4/12/2020
+Brief Purpose of the Program: To calculate sales tax for different types of automobiles.
+*/
+
 public class Electric extends Automobile {
     private int weight;
 

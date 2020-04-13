@@ -1,3 +1,10 @@
+/*
+Filename: GUI.java
+Author: Yael Brown
+Date: 4/12/2020
+Brief Purpose of the Program: To calculate sales tax for different types of automobiles.
+*/
+
 import javax.swing.*;
 import javax.swing.border.Border;
 import java.awt.*;
@@ -17,6 +24,7 @@ public class GUI extends JFrame {
         setVisible(true);
     }
 
+    // Prevent duplication of code for textarea's
     private JTextArea textArea() {
         JTextArea out = new JTextArea();
         out.setLineWrap(true);
@@ -27,6 +35,7 @@ public class GUI extends JFrame {
         return out;
     }
 
+    // Create prompt with logic
     private void setFrame(int width, int height) {
         setSize(width, height);
         setLocationRelativeTo(null);
