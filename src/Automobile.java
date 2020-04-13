@@ -1,11 +1,11 @@
+import java.sql.SQLOutput;
+
 public class Automobile {
-    protected String make;
-    protected String model;
+    protected String makeModel;
     protected Double price;
 
-    public Automobile(String make, String model, Double price) {
-        this.make = make;
-        this.model = model;
+    public Automobile(String makeModel, Double price) {
+        this.makeModel = makeModel;
         this.price = price;
     }
 
@@ -16,6 +16,15 @@ public class Automobile {
     public String toString() {
         double tax = this.salesTax();
         double total = this.price + tax;
-        return this.make + " " + this.model + " that costs $" + total + ". That includes $" + tax + " sales tax.";
+        return "This " + this.makeModel + " that costs $" + total + ". That includes $" + tax + " sales tax.";
     }
+
+    public void displayReport() {
+        double tax = this.salesTax();
+        double total = this.price + tax;
+        System.out.println("Make and Model: " + this.makeModel);
+        System.out.println("Sales Price: " + this.price);
+        System.out.println("Sales Tax: " + total);
+    }
+
 }

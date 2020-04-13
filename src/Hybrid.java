@@ -1,8 +1,8 @@
 public class Hybrid extends Automobile {
     private int mpg;
 
-    public Hybrid(String make, String model, Double price, int mpg) {
-        super(make, model, price);
+    public Hybrid(String mM, Double price, int mpg) {
+        super(mM, price);
         this.mpg = mpg;
     }
 
@@ -17,7 +17,13 @@ public class Hybrid extends Automobile {
     public String toString() {
         double tax = this.salesTax();
         double total = this.price + tax;
-        return this.make + " " + this.model + " that costs $" + total + ". That includes $" + tax + " sales tax. Also, gets " + this.mpg + " miles per gallon.";
+        return "This " + this.makeModel +  " that costs $" + total + ". That includes $" + tax + " sales tax. Also, gets " + this.mpg + " miles per gallon.";
     }
 
+    @Override
+    public void displayReport() {
+        super.displayReport();
+        System.out.println("Hybrid Vehicle");
+        System.out.println("MPG: " + mpg);
+    }
 }
