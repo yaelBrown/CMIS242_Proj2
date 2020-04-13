@@ -39,16 +39,6 @@ public class GUI extends JFrame {
         JTextArea mpgInput = textArea();
         JTextArea weightInput = textArea();
 
-//        JButton button = new JButton("This is a button");
-//        ActionListener al = new ActionListener() {
-//            @Override
-//            public void actionPerformed(ActionEvent e) {
-//                System.out.println("Button was pressed !");
-//            }
-//        };
-//
-//        button.addActionListener(al);
-
         ButtonGroup autoType = new ButtonGroup();
         JRadioButton hybridBtn = new JRadioButton("Hybrid");
         JRadioButton electricBtn = new JRadioButton("Electric");
@@ -76,7 +66,6 @@ public class GUI extends JFrame {
         Border border = BorderFactory.createLineBorder(Color.BLUE, 1);
         displayTax.setBorder(border);
         displayTax.setPreferredSize(new Dimension(100, 25));
-
 
         JButton computeBtn = new JButton("Compute Sales Tax");
         ActionListener computeTax = new ActionListener() {
